@@ -13,14 +13,14 @@ import java.util.Set;
 
 
 
-@RegisterRestClient(baseUri = "http://tackle-controls:8080")
-//@RegisterRestClient
+//@RegisterRestClient(baseUri = "http://tackle-controls:8080")
+@RegisterRestClient
 @AccessToken
 @ApplicationScoped
 public interface TagService {
 
     @GET
-    @Path("/controls/tag")
+    //@Path("/controls/tag")
     Set<Tag> getListOfTags(@QueryParam("page") int page, @QueryParam("size") int size);
 }
 
