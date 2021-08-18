@@ -20,7 +20,7 @@ import java.util.Set;
 public interface TagService {
 
     @GET
-    //@Path("/controls/tag")
+    @Path("/controls/tag")
     Set<Tag> getListOfTags(@QueryParam("page") int page, @QueryParam("size") int size);
 }
 
